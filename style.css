@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.pre-nav{
+    background-color: rgb(0, 102, 255);
+    height: 50px;
+    justify-content: center;
+}.l-pre-nav{
+    margin-left: 170px;
+    /* width: fit-content !important; */
+}
+/* .r-pre-nav{
+    width: fit-content !important;
+} */
+.location,.google,.facebook,.envelope,.insta,.phone,.twitter,.linked-in{
+    top: 12px;
+}
+.location{
+    left: 19px;
+}
+.google{
+    left: -20px;
+}
+.insta{
+    left: -50px;
+}
+.linked-in{
+    left: -80px;
+}
+.twitter{
+    left: -120px;
+}
+.facebook{
+    left: -150px;
+}
+.envelope{
+    left: -8px;
+}
+.phone{
+    left: 120px;
+}
+#scrollToTopBtn{
+    display: none;
+    outline: none;
+}
+.page-up{
+    top: 550px;
+    right: 50px;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 2px;
+}
+.navbar{
+    z-index: 3 !important;
+    position: sticky !important;
+    top: 0 !important;
+}
+.carousel-inner,.carousel{
+    height: 555px;
+}
+.carousel-caption{
+    bottom: 0;
+    top: 13rem;
+}
+.carousel-indicators{
+    transform: rotate(90deg);
+    left: unset !important;
+    bottom: 250px !important;
+    margin-right: 0 !important;
+}
+.carousel-indicators > button {
+    width: 10px !important;
+    height: 15px !important;
+}
+/*second page*/
+.second-page{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.headd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.l2{
+    width: 35px;
+    margin-top: 3px;
+    margin-right: 14px;
+    background-color: rgb(83, 83, 255);
+    height: 0.5px;
+    border: none;
+}
+.r2,.l1,.r1{
+    margin-left: 14px;
+}
+.l1,
+.r1 {
+    margin-bottom: 0;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(83, 83, 255);
+    border: none;
+    opacity: 1;
+}
+.l2,
+.r2 {
+    width: 35px;
+    margin-top: 3px;
+    background-color: rgb(83, 83, 255);
+    height: 0.5px;
+    border: none;
+    opacity: 1;
+}
+.text-one{
+    margin-bottom: 15px;
+}
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    box-sizing: border-box;
+    align-items: flex-start;
+    position: relative;
+}
+.head1{
+    font-weight: bold;
+}
+.head1,
+.te1 {
+    padding-left: 10px;
+}
+.market{
+    margin-left: 40px;
+    border-left: 1px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.first-card{
+    height: 370px;
+    width: 28%;
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    z-index: 1;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.7);
+    background-color: white;
+    font-size: small;
+}
+.second-card{
+    background-image: url(images/ph5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    width: 40%;
+    position: relative;
+    margin-left: 220px;
+}
+.third-card{
+    width: 35%;
+    font-size: small;
+}
+.b-text_1{
+    margin-top: 40px;
+}
+.but-learn{
+    background-color: rgb(19, 19, 255);
+    color: white;
+    border-radius: 15px;
+    border-color: rgb(19, 19, 255);
+    height: 25px;
+    width: 100px;
+}
+.services-page{
+    background-image: url(images/ph2.jpg);
+}
+.services-text{
+    margin: auto;
+}
+.up-cards{
+    padding-top: 90px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+.test{
+    text-align: center;
+}
+.fa-pencil,
+.fa-cloud-arrow-up,
+.fa-laptop-code,
+.fa-desktop,
+.fa-network-wired,
+.fa-wordpress{
+    top: 40%;
+    right: 46%;
+}
+.move{
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    transition: 2s;
+}
+.card-sm{
+    font-size: smaller;
+}
+.card-1:hover .move,
+.card-2:hover .move,
+.card-3:hover .move,
+.card-4:hover .move,
+.card-5:hover .move,
+.card-6:hover .move{
+    height: 100%;
+}
+.b-line{
+    width: 60px;
+    background-color: rgb(0, 110, 255);
+    height: 2px;
+    opacity: 1 !important;
+    border: 0;
+    margin: auto;
+}
+.h-button{
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+.h-button:hover {
+    color: white;
+    background-color: #0d6efd;
+}
+.number-home{
+    width: 100%;
+    height: 200px;
+}
+.num-box{
+    width: 200px;
+}
+.white-box{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+#message{
+    height: 120px;
+}
+.fit{
+    width: fit-content !important;
+}
+.hidden{
+    visibility: hidden;
+}
+
+@media screen and (max-width:1340px){
+    .first-card{
+        width: 30%;
+        height: fit-content;
+        margin-left: 80px;
+    }
+    .second-card{
+        width: 60%;
+        margin-left: 350px;
+    }
+    .third-card{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:1080px){
+    .page{
+        justify-content: space-between;
+    }
+    .first-card{
+        position: unset;
+        width: 45%;
+        margin-left: 0;
+
+    }
+    .second-card{
+        width: 45%;
+        margin-left: 0;
+        background-size: 100% 85%;
+    }    
+    .third-card{
+        width: 100%;
+    }
+    .pre-nav{
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:900px){
+    .page{
+        justify-content: center;
+    }
+    .first-card{
+        width: 100%;
+        height: fit-content;
+    }
+    .second-card{
+        width: 100%;
+        margin-top: 30px;
+        background-size: 100% 100%;
+    }
+    .third-card{
+        width: 100%;
+    }
+}
+
+/*end of second page*/
+@media screen and (max-width:550px){
+    .r-pre-nav{
+        margin-left: 60px;
+    }
+}    

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade-X</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- page up button -->
+    <button class="bg-primary position-fixed rounded-circle page-up border-0" id="scrollToTopBtn" title="Go to top">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <!-- blue-nav -->
+    <div class="pre-nav">
+        <div class="container">
+            <div class="row justify-content-lg-between address ">
+                <div class="l-pre-nav position-relative col-lg-4 col-md-12 col-sm-12">
+                    <i class="fa-brands fa-facebook-f position-absolute facebook" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter position-absolute twitter" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin-in position-absolute linked-in" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-instagram position-absolute insta" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-google-plus-g position-absolute google" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-location-dot position-absolute location" style="color: #ffffff;"></i>
+                    <p class="text-white border-start ps-4 mt-2">267 Park Avenue New York NY 90210</p>
+                    <!-- width problem here -->
+                </div>
+                <div class="r-pre-nav d-flex position-relative col-lg-4 col-md-12 col-sm-12">
+                    <i class="fa-solid fa-envelope position-absolute envelope" style="color: #ffffff;"></i>
+                    <p class="text-white mt-2 pe-1">Quick email</p>
+                    <i class="fa-solid fa-phone-volume position-absolute phone" style="color: #ffffff;"></i>
+                    <p class="text-white border-start ps-5 mt-2">+1 (409) 987-5874</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="#">TRADEX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            HEADERS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            BLOG POST
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            FEATURES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active h-100">
+                <img src="images/ph.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-md-block text-primary">
+                    <div>
+                        <h2>What You Do Today For People 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, distinctio?</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary me-3 rounded-pill">Get Start Now</button>
+                        <button type="button" class="btn btn-outline-light rounded-pill">Contact US</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="images/ph2.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-md-block text-primary">
+                    <h2>What You Do Today For People 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, distinctio?</p>
+                    <div class="d-flex justify-content-center text-black">
+                        <button type="button" class="btn btn-primary me-3 rounded-pill">Get Start Now</button>
+                        <button type="button" class="btn btn-outline-light rounded-pill">Contact US</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="images/ph3.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-md-block text-primary">
+                    <h2>What You Do Today For People 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, distinctio?</p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary me-3 rounded-pill">Get Start Now</button>
+                        <button type="button" class="btn btn-outline-light rounded-pill">Contact US</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="images/ph4.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about us page 2 divs one above the other-->
+    <section class="container second-page">
+        <div class="headd">
+            <div class="left">
+                <hr class="l1"><hr class="l2">
+            </div>
+            <div><h4 class="text-one">About US</h4></div>
+            <div class="right">
+                <hr class="r1"><hr class="r2">
+            </div>
+        </div>
+        <div class="page">
+            <div class="first-card">
+                <div class="market">
+                    <p class="head1">Marketing</p>
+                    <p class="te1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia?</p>
+                </div>
+                <div class="market">
+                    <p class="head1">Great Usability</p>
+                    <p class="te1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia?</p>
+                </div>
+                <div class="market">
+                    <p class="head1">Unique Design</p>
+                    <p class="te1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia?</p>
+                </div>
+                <div class="market">
+                    <p class="head1">Quick & Powerful</p>
+                    <p class="te1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia?</p>
+                </div>
+            </div>
+            <div class="second-card"></div>
+            <div class="third-card">
+                <div class="b-text_1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rem laudantium aliquam aspernatur cupiditate itaque id magnam enim eius dolorum quos, consequuntur doloribus ducimus? Harum amet, qui repellendus assumenda fugiat distinctio ipsam culpa numquam fugit vero recusandae nemo, voluptatem ab, natus voluptas facilis iste hic autem officiis? Porro nam officiis tempore asperiores quaerat unde voluptates in? Accusamus molestias nihil placeat!</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rem laudantium aliquam aspernatur cupiditate itaque id magnam enim eius dolorum quos, consequuntur doloribus ducimus? Harum amet, qui repellendus assumenda fugiat distinctio ipsam culpa numquam fugit vero recusandae nemo, voluptatem ab, natus voluptas facilis iste hic autem officiis? Porro nam officiis tempore asperiores quaerat unde voluptates in? Accusamus molestias nihil placeat!</p>
+                </div>
+                <button class="but-learn">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <!-- moving numbers -->
+    <section class="number-home  bg-secondary-subtle">
+        <div class="container d-flex justify-content-between align-items-center h-100">
+            <div class="num-box d-flex justify-content-around">
+                <div class="white-box d-flex align-items-center justify-content-center shadow rounded">
+                    <i class="fa-regular fa-thumbs-up fa-2xl text-primary"></i>
+                </div>
+                <div>
+                    <h3 id="n-one">8000</h3>
+                    <p>Total projects</p>
+                </div>
+            </div>
+            <div class="num-box d-flex justify-content-around">
+                <div class="white-box d-flex align-items-center justify-content-center shadow rounded">
+                    <i class="fa-solid fa-trophy fa-2xl text-primary"></i>
+                </div>
+                <div>
+                    <h3 id="n-two">810</h3>
+                    <p>Won Awards</p>
+                </div>
+            </div>
+            <div class="num-box d-flex justify-content-around">
+                <div class="white-box d-flex align-items-center justify-content-center shadow rounded">
+                    <i class="fa-regular fa-face-smile fa-2xl text-primary"></i>
+                </div>
+                <div>
+                    <h3 id="n-three">2000</h3>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+            <div class="num-box d-flex justify-content-around">
+                <div class="white-box d-flex align-items-center justify-content-center shadow rounded">
+                    <i class="fa-regular fa-calendar-days fa-2xl text-primary"></i>
+                </div>
+                <div>
+                    <h3 id="n-four">20</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of second page -->
+    <!-- services page -->
+    <section class="services-page pb-4">
+        <div class="container"> 
+            <div class="headd pt-3 mb-3">
+                <div class="left">
+                    <hr class="l1"><hr class="l2">
+                </div>
+                <div><h4 class="text-one text-white">Our Services</h4></div>
+                <div class="right">
+                    <hr class="r1"><hr class="r2">
+                </div>
+            </div>
+            <p class="text-white w-75 services-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quas exercitationem sequi fuga labore vero laborum, doloribus tempore magni quisquam cumque ducimus vitae, iure ratione?</p>
+            <!-- cards -->
+            <div class="row gap-3 justify-content-between text-center mt-3">
+                <div class="col-lg-3 col-md-5 col-sm-12 up-cards rounded border border-white position-relative card-1">
+                    <p class="text-white mb-0 fw-bold fs-5">
+                        Online Marketing
+                    </p>
+                    <i class="fa-solid fa-cloud-arrow-up fa-xl position-absolute" style="color: #ffffff;"></i>
+                    <!-- moving card -->
+                    <div class="w-100 position-absolute move rounded">
+                        <p class="pt-4 mb-0 fw-bold fs-5">
+                            Online Marketing
+                        </p>
+                        <p class="card-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia, pariatur cupiditate quo voluptatum facilis? Corporis, quisquam facere!</p>
+                        <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Read More
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 up-cards rounded border border-white position-relative card-2">
+                    <p class="text-white mb-0 fw-bold fs-5">
+                        Web Design
+                    </p>
+                    <i class="fa-solid fa-laptop-code fa-xl position-absolute" style="color: #ffffff;"></i>
+                    <div class="w-100 position-absolute move rounded">
+                        <p class="pt-4 mb-0 fw-bold fs-5">
+                            Web Design
+                        </p>
+                        <p class="card-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia, pariatur cupiditate quo voluptatum facilis? Corporis, quisquam facere!</p>
+                        <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Read More
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 up-cards rounded border border-white  position-relative card-3">
+                    <p class="text-white mb-0 fw-bold fs-5">
+                        Graphic Design
+                    </p>
+                    <i class="fa-solid fa-pencil position-absolute fa-xl" style="color: #ffffff;"></i>
+                    <div class="w-100 position-absolute move rounded">
+                        <p class="pt-4 mb-0 fw-bold fs-5">
+                            Graphic Design
+                        </p>
+                        <p class="card-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia, pariatur cupiditate quo voluptatum facilis? Corporis, quisquam facere!</p>
+                        <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Read More
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 up-cards rounded border border-white position-relative card-4">
+                    <p class="text-white mb-0 fw-bold fs-5">
+                        Web Development
+                    </p>
+                    <i class="fa-solid fa-desktop fa-xl position-absolute" style="color: #ffffff;"></i>
+                    <div class="w-100 position-absolute move rounded">
+                        <p class="pt-4 mb-0 fw-bold fs-5">
+                            Web Development
+                        </p>
+                        <p class="card-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia, pariatur cupiditate quo voluptatum facilis? Corporis, quisquam facere!</p>
+                        <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Read More
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 up-cards rounded border border-white position-relative card-5">
+                    <p class="text-white mb-0 fw-bold fs-5">
+                        Networking
+                    </p>
+                    <i class="fa-solid fa-network-wired fa-xl position-absolute" style="color: #ffffff;"></i>
+                    <div class="w-100 position-absolute move rounded">
+                        <p class="pt-4 mb-0 fw-bold fs-5">
+                            Networking
+                        </p>
+                        <p class="card-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia, pariatur cupiditate quo voluptatum facilis? Corporis, quisquam facere!</p>
+                        <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Read More
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 up-cards rounded border border-white position-relative card-6">
+                    <p class="text-white mb-0 fw-bold fs-5">
+                        Wordpress Theme
+                    </p>
+                    <i class="fa-brands fa-wordpress fa-xl position-absolute" style="color: #ffffff;"></i>
+                    <div class="w-100 position-absolute move rounded">
+                        <p class="pt-4 mb-0 fw-bold fs-5">
+                            Wordpress Theme
+                        </p>
+                        <p class="card-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia, pariatur cupiditate quo voluptatum facilis? Corporis, quisquam facere!</p>
+                        <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our pricing page with changing buttons -->
+    <section class="container mt-3">
+        <div class="headd pt-3 mb-3">
+            <div class="left">
+                <hr class="l1"><hr class="l2">
+            </div>
+            <div><h4 class="text-one">Our Pricing</h4></div>
+            <div class="right">
+                <hr class="r1"><hr class="r2">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="rounded-start-pill px-5 py-2 bg-primary text-white">Per/Month</button>
+            <button class="rounded-end-pill px-5 py-2">Per/Year</button>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-4 border-top border-start pt-2">
+                <p class="fs-2">Personal</p>
+                <hr class="b-line">
+                <p class="mt-3">From <span class="text-primary">$999</span></p>
+                <div class="border-top pt-2">
+                    <p class="fw-bold mb-0">03 PSD Pack</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur.</p>
+                </div>
+                <div class="border-top pt-2">
+                    <p class="fw-bold mb-0">03 Wordpress Pack</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur.</p>
+                </div>
+                <div class="border-top border-bottom pt-2">
+                    <p class="fw-bold mb-0">120 Support Ticket</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur.</p>
+                </div>
+                <button class="rounded-pill py-3 px-5 mt-4 bg-primary text-white border-primary">Get Started Now</button>
+            </div>
+            <div class="col-4 pt-2 shadow">
+                <p class="fs-2">Business</p>
+                <hr class="b-line">
+                <p class="mt-3">From <span class="text-primary">$999</span></p>
+                <div class="border-top pt-2">
+                    <p class="fw-bold mb-0">03 PSD Pack</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur.</p>
+                </div>
+                <div class="border-top pt-2">
+                    <p class="fw-bold mb-0">03 Wordpress Pack</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur.</p>
+                </div>
+                <div class="border-top border-bottom pt-2">
+                    <p class="fw-bold mb-0">120 Support Ticket</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur.</p>
+                </div>
+                <button class="rounded-pill py-3 px-5 mt-4 h-button">Get Started Now</button>
+            </div>
+            <div class="col-4 border-top border-end pt-2">
+                <p class="fs-2">Ultimate</p>
+                <hr class="b-line">
+                <p class="mt-3">From <span class="text-primary">$999</span></p>
+                <div class="border-top pt-2">
+                    <p class="fw-bold mb-0">03 PSD Pack</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur.</p>
+                </div>
+                <div class="border-top pt-2">
+                    <p class="fw-bold mb-0">03 Wordpress Pack</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur.</p>
+                </div>
+                <div class="border-top border-bottom pt-2">
+                    <p class="fw-bold mb-0">120 Support Ticket</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur.</p>
+                </div>
+                <button class="rounded-pill py-3 px-5 mt-4 bg-primary text-white border-primary">Get Started Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- end of fourth page -->
+    <!-- form validation -->
+    <section style="background-image: url(images/form.jpg);">
+        <div class="container mt-5">
+            <div class="headd pt-3 mb-3">
+                <div class="left">
+                    <hr class="l1"><hr class="l2">
+                </div>
+                <div><h4 class="text-one text-white">Contact US</h4></div>
+                <div class="right">
+                    <hr class="r1"><hr class="r2">
+                </div>
+            </div>
+            <form class="row justify-content-around">
+                <label class="col-lg-2 fit pe-0 text-white" for="fname">First name: </label>
+                <input class="col-lg-2" type="text" id="fname" placeholder="At Least 5 Chars">
+                <label class="col-lg-2 fit pe-0 text-white" for="lname">Last name: </label>
+                <input class="col-lg-2" type="text" id="lname" placeholder="At least 5 Chars">
+                <label class="col-lg-2 fit pe-0 text-white" for="phone">Phone number: </label>
+                <input class="col-lg-2" type="text" id="phone" placeholder="Must Be 11 Numbers">
+                <div class="row">
+                    <p class="text-danger hidden col-lg-5 text-center" id="name_1">plz enter full name</p>
+                    <p class="text-danger hidden col-lg-3 text-center" id="name_2">second name incorrect</p>
+                    <p class="text-danger hidden col-lg-4 text-end" id="number_1">not a valid phone number</p>
+                </div>
+                <label class="col-lg-12 ms-4 text-white" for="message">Message :</label>
+                <textarea class="col-lg-11" id="message"></textarea>
+                <input class="col-lg-2 mt-3 mb-3" id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
